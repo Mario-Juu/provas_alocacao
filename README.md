@@ -1,4 +1,4 @@
-###  Trabalho 2 de Algoritmos
+#  Trabalho 2 de Algoritmos
 ## Descrição
 O projeto consiste no desenvolvimento de algoritmos para resolver um problema de alocação de provas baseado na coloração de grafos. A tarefa é atribuir o menor número possível de tipos de prova a mesas dispostas em uma sala de aula, de forma que nenhuma mesa adjacente tenha o mesmo tipo de prova. 
 
@@ -31,21 +31,21 @@ Afim de melhorar a eficiência dos algoritmos para esse problema de coloração 
 O DSatur (Degree of Saturation) é um algoritmo clássico para coloração de grafos que funciona muito bem para resolver problemas como esse, onde desejamos minimizar o número de cores utilizadas. Ele utiliza o conceito de saturação, que mede o número de cores distintas já atribuídas aos vizinhos de um vértice.
 ### Explicação do Algoritmo DSatur
 
-Saturação:
+#### Saturação:
 
 A saturação de um vértice é o número de cores distintas já atribuídas aos seus vizinhos.
 Quanto maior a saturação, maior a chance de um vértice estar próximo de um conflito de cores.
 
-Seleção de Vértices:
+#### Seleção de Vértices:
 
 Em cada iteração, escolhemos o vértice com maior saturação.
 Se houver empate, escolhemos o vértice com maior grau (número de vizinhos).
 
-Atribuição de Cores:
+#### Atribuição de Cores:
 
 Para o vértice escolhido, atribuímos a menor cor que não foi usada pelos seus vizinhos.
 
-Atualização da Saturação:
+#### Atualização da Saturação:
 
 Após atribuir uma cor a um vértice, atualizamos a saturação de todos os seus vizinhos não coloridos.
 
@@ -89,12 +89,13 @@ O Algoritmo 3 frequentemente supera os Algoritmos 1 e 2, especialmente em grafos
 
 Em geral, obteve soluções semelhantes ou ligeiramente melhores que o DSatur.
 Ficou empatado ou levemente atrás do DSatur em casos como sala11 e sala12.
-Comparação Detalhada
 
 #### Casos com Melhores Resultados para DSatur (Algoritmo 4):
 
 sala2: Redução de 3-4 tipos de prova em comparação aos Algoritmos 1, 2 e 3.
+
 sala6: Redução consistente de 2-3 tipos de prova.
+
 sala8: Reduziu em 2 tipos de prova, comparado ao Algoritmo 1.
 
 #### Casos com Empate (ou Próximos):
