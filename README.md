@@ -77,7 +77,7 @@ Média:
 ### Resumo dos Dados
 #### Algoritmo 4 (DSatur):
 
-Mostrou-se mais eficiente ou equivalente ao alg5 em 10 de 12 instâncias.
+Mostrou-se mais eficiente ou equivalente ao alg5 em 11 de 12 instâncias.
 Reduziu significativamente o número de tipos de prova em casos como sala2 (9 contra 12 de outros algoritmos) e sala6 (16 contra 18-19).
 
 #### Algoritmos 1, 2 e 3:
